@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtldhqgnwxs3h"]
+
+[ext_resource type="PackedScene" uid="uid://buit2aiegqjty" path="res://2D/player.tscn" id="1_cyn5p"]
+[ext_resource type="Texture2D" uid="uid://b63f7x08f4but" path="res://Intro to Godot - Assets/Sprites/Player.png" id="2_prpa0"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" parent="." instance=ExtResource("1_cyn5p")]
+position = Vector2(-146, -149)
+
+[node name="Sprite2D2" parent="." instance=ExtResource("1_cyn5p")]
+position = Vector2(-65, 246)
+
+[node name="Sprite2D3" parent="." instance=ExtResource("1_cyn5p")]
+position = Vector2(315, 200)
+
+[node name="Sprite2D4" parent="." instance=ExtResource("1_cyn5p")]
+position = Vector2(-317, 37)
+
+[node name="Sprite2D5" parent="." instance=ExtResource("1_cyn5p")]
+position = Vector2(-238, 221)
+
+[node name="Sprite2D6" parent="." instance=ExtResource("1_cyn5p")]
+position = Vector2(143, 151)
+
+[node name="Player" type="Sprite2D" parent="."]
+position = Vector2(-4, -14)
+texture = ExtResource("2_prpa0")

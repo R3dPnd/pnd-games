@@ -6,6 +6,7 @@
 [node name="Sprite2D" type="Sprite2D"]
 modulate = Color(0.247059, 1, 1, 1)
 texture = ExtResource("1_irwdk")
+flip_h = true
 
 [node name="Coin" type="Sprite2D" parent="."]
 position = Vector2(0, -46)

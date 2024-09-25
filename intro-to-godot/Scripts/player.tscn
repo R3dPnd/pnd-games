@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://blswxrmeckog7"]
+
+[ext_resource type="Script" path="res://Scripts/intro-to-scripting.gd" id="1_w3wka"]
+[ext_resource type="PackedScene" uid="uid://buit2aiegqjty" path="res://2D/player.tscn" id="2_66fcb"]
+
+[node name="Node2D" type="Node2D"]
+rotation = -0.0585466
+script = ExtResource("1_w3wka")
+
+[node name="Sprite2D" parent="." instance=ExtResource("2_66fcb")]
+position = Vector2(3396, 1595)
+script = ExtResource("1_w3wka")

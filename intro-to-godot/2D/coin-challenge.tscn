@@ -1,31 +1,31 @@
 [gd_scene load_steps=2 format=3 uid="uid://c1shvvxmfo6jb"]
 
-[ext_resource type="Texture2D" uid="uid://clrp5y1k7jlog" path="res://Intro to Godot - Assets/Sprites/Coin.png" id="1_hh6o6"]
+[ext_resource type="Texture2D" uid="uid://clrp5y1k7jlog" path="res://Intro to Godot - Assets/Sprites/Coin.png" id="1_7m1ch"]
 
 [node name="Coin" type="Sprite2D"]
 scale = Vector2(2, 2)
-texture = ExtResource("1_hh6o6")
+texture = ExtResource("1_7m1ch")
 
 [node name="Coin" type="Sprite2D" parent="."]
 position = Vector2(-25, 25)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_hh6o6")
+texture = ExtResource("1_7m1ch")
 
 [node name="Coin2" type="Sprite2D" parent="."]
 position = Vector2(60, 25)
 rotation = 0.785398
-texture = ExtResource("1_hh6o6")
+texture = ExtResource("1_7m1ch")
 
 [node name="Coin3" type="Sprite2D" parent="."]
 position = Vector2(0, 50)
-texture = ExtResource("1_hh6o6")
+texture = ExtResource("1_7m1ch")
 
 [node name="Coin4" type="Sprite2D" parent="."]
 position = Vector2(25, 25)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_hh6o6")
+texture = ExtResource("1_7m1ch")
 
 [node name="Coin5" type="Sprite2D" parent="."]
 position = Vector2(-60, 25)
 rotation = 0.785398
-texture = ExtResource("1_hh6o6")
+texture = ExtResource("1_7m1ch")

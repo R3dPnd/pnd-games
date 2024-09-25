@@ -1,0 +1,62 @@
+[gd_scene load_steps=11 format=3 uid="uid://p0vp3rnol8ks"]
+
+[ext_resource type="Material" uid="uid://d0wr6kkp7ewmh" path="res://Materials/snow.tres" id="1_huvje"]
+[ext_resource type="Material" uid="uid://cp2iyeeg3p6n4" path="res://Materials/wood.tres" id="2_66agf"]
+[ext_resource type="Material" uid="uid://btsdsxt6s6ix4" path="res://Materials/coal.tres" id="3_165a1"]
+[ext_resource type="Material" uid="uid://d3g101mfic4db" path="res://Materials/carrot.tres" id="4_qcxjy"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_5h63j"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_0v22v"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_mp337"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_8fwg2"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_hw5hx"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_jkyar"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="snow-man" type="Node3D" parent="."]
+
+[node name="butt" type="MeshInstance3D" parent="snow-man"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+material_override = ExtResource("1_huvje")
+mesh = SubResource("SphereMesh_5h63j")
+skeleton = NodePath("../..")
+
+[node name="torso" type="MeshInstance3D" parent="snow-man"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 2.08165e-12, 2, 2.08165e-12)
+material_override = ExtResource("1_huvje")
+mesh = SubResource("SphereMesh_0v22v")
+skeleton = NodePath("../..")
+
+[node name="arms" type="MeshInstance3D" parent="snow-man/torso"]
+transform = Transform3D(-1.02599e-07, 0.0306466, -3.91488e-09, -3.57851e-23, -1.3396e-09, -0.0895621, -2.34718, -1.3396e-09, 1.71125e-16, 2.08165e-12, 0.2, 2.08165e-12)
+material_override = ExtResource("2_66agf")
+mesh = SubResource("CapsuleMesh_mp337")
+skeleton = NodePath("../..")
+
+[node name="head" type="MeshInstance3D" parent="snow-man"]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 2.08165e-12, 3.3, 2.08165e-12)
+material_override = ExtResource("1_huvje")
+mesh = SubResource("SphereMesh_8fwg2")
+
+[node name="eye-right" type="MeshInstance3D" parent="snow-man/head"]
+transform = Transform3D(0.0137754, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.5, 0.1, 0.1)
+material_override = ExtResource("3_165a1")
+mesh = SubResource("CapsuleMesh_hw5hx")
+skeleton = NodePath("")
+
+[node name="eye-left" type="MeshInstance3D" parent="snow-man/head"]
+transform = Transform3D(0.0138522, 0, 0, 0, 0.100557, 0, 0, 0, 0.100557, 0.5, 0.1, -0.1)
+material_override = ExtResource("3_165a1")
+mesh = SubResource("CapsuleMesh_hw5hx")
+skeleton = NodePath("")
+
+[node name="nose" type="MeshInstance3D" parent="snow-man/head"]
+transform = Transform3D(-4.37114e-09, 0.5, -4.37114e-09, -1.5246e-24, -2.18557e-08, -0.1, -0.1, -2.18557e-08, 1.91069e-16, 0.3, 0, 2.08165e-12)
+material_override = ExtResource("4_qcxjy")
+mesh = SubResource("CapsuleMesh_jkyar")

@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="intro-to-godot"
-run/main_scene="res://Scripts/player.tscn"
+config/name="IntroToGodot"
+run/main_scene="res://TestScene.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
